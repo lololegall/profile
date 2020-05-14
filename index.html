@@ -5,40 +5,42 @@
     <meta name="description" content="Creation or redesign of your website interface. Audit and support on your digital strategy, social media, community management, visual identity. Web development to launch your website. Digital creation of visual supports: logos, business cards, flyers, web banners.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   </head>
-
   <body>
+
     <balise id="home"></balise>
     <div class="navbar">
-      <div class="h" id="h"><a href="#home">HOME</a></div>
-      <div class="s" id="s"><a href="#services">SERVICES</a></div>
-      <div class="p" id="p"><a href="#portfolio">PORTFOLIO</a></div>
-      <div class="e" id="e"><a href="#expertise">EXPERTISE</a></div>
-      <div class="a" id="a"><a href="#about_me">ABOUT ME</a></div>
-      <div class="c" id="c"><a href="#contact">CONTACT</a></div>
+      <a href="#home">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#portfolio">PORTFOLIO</a>
+      <a href="#expertise">EXPERTISE</a>
+      <a href="#about_me">ABOUT ME</a>
+      <a href="#contact">CONTACT</a>
     </div>
+
+    <audio controls>
+      <source src="audio/kokoroko-abusey-junction-we-out-here.mp3" type="audio/mpeg">
+    </audio>
 
     <div class= "banner">
       <br>
-      <audio controls><source src="audio/kokoroko-abusey-junction-we-out-here.mp3" type="audio/mpeg"></audio>
-      <br>
       <h1>WELCOME</h1>
-      <img src="images/profile_picture.png" alt="profile picture" width="150" class="round_picture">
+      <img src="images/profile_picture.png" alt="profile picture" width="150" class="img_round">
       <h3>I'm Margaux!</h3>
       <p><center>UX Designer • Digital Marketer • Web Developer</p>
       <p><center>Freelance</p>
-
       <br><br><br>
     </div>
-    <img src="images/background/palmbanner.png" alt="banner">
+    <img src="images/background/palmbanner.png" alt="banner" class="img">
 
     <br><br>
     <balise id="services"></balise>
     <br>
-    <h2>🌞 SERVICES</h2>
+    <h2>SERVICES</h2>
     <div class= "container">
       <div class= "card_white">
         <h3>UX/UI DESIGN & DEV</h3>
@@ -80,40 +82,48 @@
       </div>
     </div>
 
-    <img src="images/background/white_top.png">
+    <img src="images/background/white_top.png" class="img">
     <balise id="portfolio"></balise>
     <h2>🐚 PREVIOUS WORKS</h2>
+    <br>
     <div class= "container">
       <a href="https://www.behance.net/gallery/92874453/Un-chien-en-ville-REDESIGN" target="_blank"><img src="images/projects/unchienenville.png" alt="Un chien en ville" width="400"></a>
       <a href="https://www.behance.net/gallery/94552335/MARGALOU-website-redesign-UXUI-design" target="_blank"><img src="images/projects/margalou.png" alt="Margalou" width="400"></a>
       <img src="images/projects/sucresale.png" alt="Sucré Salé" width="400">
     </div>
+    <br>
 
     <form>
       <h2>YOU HAVE A PROJECT?</h2>
       <h3>LET'S TALK!</h3>
-      <div class= "card_white_inset">
-        <div class="form-group">
-          <label for="exampleInputName1">Name</label>
-          <input type="name" class="form-control" id="exampleInputName1">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPhone1">Phone</label>
-          <input type="phone" class="form-control" id="exampleInputPhone1">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputMessage1">Message</label>
-          <input type="message" class="form-control" id="exampleInputMessage1">
-        </div>
-        <button type="submit" class="btn btn-primary">GET A QUOTE</button>
-      </div>
-    </form>
+    <div class="container3">
+      <form action="action_page.php">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" placeholder="">
 
-    <img src="images/background/white_bottom.png">
+        <label for="email">Email*</label>
+        <input type="text" id="email" name="email" placeholder="">
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" placeholder="">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">France</option>
+          <option value="canada">USA</option>
+          <option value="usa">Spain</option>
+        </select>
+
+        <label for="subject">Your message</label>
+        <textarea id="subject" name="subject" placeholder="" style="height:100px"></textarea>
+
+        <br><br>
+        <center><button type="submit" class="btn">SEND</button></center>
+
+      </form>
+    </div>
+
+    <img src="images/background/white_bottom.png" class="img">
     <balise id="expertise"></balise>
     <h2>🦋 EXPERTISE</h2>
     <div class= "container">
@@ -125,38 +135,40 @@
         <p>> SEO & SEA</p>
         <p>> Influencer marketing</p>
       </div>
-      <div class= "card_white">
+      <div class= "card_white_inset">
         <h3>UX/UI DESIGN</h3>
         <p>> User research & stories</p>
         <p>> Wireframes & prototypes</p>
         <p>> Visual & graphic creation</p>
       </div>
-      <div class="card">
-        <h3>MY TOOLS</h3>
-        <p>> Google Analytics, Google Ads</p>
-        <p>> Adobe XD, Figma, Photoshop</p>
-      </div>
-    </div>
-    <div class= "container">
-      <div class= "card_white">
+      <div class= "card_white_inset">
         <h3>WEB DEVELOPMENT</h3>
         <p>> Front-End integration</p>
         <p>> Back-End programmation</p>
       </div>
-      <div class= "card">
-        <h3>MY TOOLS</h3>
-        <p>> HTML5, CSS, Wordpress</p>
-        <p>> Ruby, OOP, Ruby on rails</p>
-      </div>
+    </div>
+    <div class= "container">
+      <h3>MY TOOLS</h3>
+      <img src="images/tools/photoshop.png" class="img" width="50">
+      <img src="images/tools/lightroom.png" class="img" width="50">
+      <img src="images/tools/xd.png" class="img" width="50">
+      <img src="images/tools/figma.png" class="img" width="50">
+      <img src="images/tools/analytics.png" class="img" width="50">
+      <img src="images/tools/html.png" class="img" width="50">
+      <img src="images/tools/css.png" class="img" width="50">
+      <img src="images/tools/ruby.png" class="img" width="50">
+      <img src="images/tools/oop.png" class="img" width="50">
+      <img src="images/tools/rails.png" class="img" width="50">
+      <img src="images/tools/wordpress.png" class="img" width="50">
     </div>
 
-    <img src="images/background/white_top.png">
+    <img src="images/background/white_top.png" class="img">
     <balise id="about_me"></balise>
     <h2>ABOUT ME</h2>
-    <div class= "container_x2">
+    <div class= "container2">
       <img src="images/bio/eye.jpg" alt="bio" width="300">
       <div class="card">
-        <p>Hello!
+        <p>> Hello!
           <br><br><br>
           I'm Margaux, a freelancer from France, specialized in UX Design, Digital Marketing and Web Development.
           I love traveling, surfing, dancing and swimming! I'm a nature, art and music lover.
@@ -170,20 +182,28 @@
     </div>
 
     <div class="footer">
-      <img src="images/background/black_bottom.png">
+      <img src="images/background/black_bottom.png" class="img">
       <balise id="contact"></balise>
       <h2>CONTACT</h2>
-      <p><center>Marseille, France • margauxxlegall@gmail.com • +33 6 01 905 347</p>
-      <br>
-      <ul class="list-inline">
-        <li><a href="mailto:margauxxlegall@gmail.com?subject= Contact request" target="_blank"><img src="images/icons/email.png" alt="Email" width="50"></a></li>
-        <li><a href="https://www.instagram.com/lololegall/" target="_blank"><img src="images/icons/instagram.png" alt="Instagram" width="50"></a></li>
-        <li><a href="https://www.linkedin.com/in/margaux-le-gall/?locale=en_US" target="_blank"><img src="images/icons/linkedin.png" alt="LinkedIn" width="50"></a></li>
-        <li><a href="https://www.behance.net/margaux-le-gall" target="_blank"><img src="images/icons/behance.png" alt="Behance" width="50"></a></li>
-        <li><a href="https://github.com/lololegall" target="_blank"><img src="images/icons/github.png" alt="GitHub" width="50"></a></li>
-      </ul>
-      <br><br>
+      <div class="container">
+        <ul class="list-inline">
+          <li><p>Marseille, France</p></li>
+          <li><p>margauxxlegall@gmail.com</p></li>
+          <li><p>+33 6 01 905 347</p></li>
+        </ul>
+      </div>
+      <div class="container">
+        <ul class="list-inline">
+          <li><a href="mailto:margauxxlegall@gmail.com?subject= Contact request" target="_blank"><img src="images/icons/email.png" alt="Email" width="30"></a></li>
+          <li><a href="https://www.instagram.com/lololegall/" target="_blank"><img src="images/icons/instagram.png" alt="Instagram" width="30"></a></li>
+          <li><a href="https://www.linkedin.com/in/margaux-le-gall/?locale=en_US" target="_blank"><img src="images/icons/linkedin.png" alt="LinkedIn" width="30"></a></li>
+          <li><a href="https://www.behance.net/margaux-le-gall" target="_blank"><img src="images/icons/behance.png" alt="Behance" width="30"></a></li>
+          <li><a href="https://github.com/lololegall" target="_blank"><img src="images/icons/github.png" alt="GitHub" width="30"></a></li>
+        </ul>
+      </div>
+      <br><br><br><br>
     </div>
+
   </body>
 </html>
 <!-- end of file -->

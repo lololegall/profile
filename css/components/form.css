@@ -1,0 +1,20 @@
+input[type=text], select, textarea {
+  border: 1px solid white;
+  border-radius: 10px;
+
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+
+  resize: vertical;
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #292929;
+}
+
+.container3 {
+  width: 50%;
+  margin: 5px auto;
+}

@@ -1,0 +1,31 @@
+.container, .container2 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container2 {
+  justify-content: center;
+}
+
+/*@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}*/
